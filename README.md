@@ -1,6 +1,6 @@
 This is a productivity extension that shows what is on your calendar, what work you have to do that day, and tracks your goals.
 
-View a demo in DEMO.mp4
+View a demo in DEMO and DEMO_Arduino
 
 Features:
 - Shows current song playing on your Spotify player
