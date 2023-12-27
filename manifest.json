@@ -1,0 +1,20 @@
+{
+  "manifest_version": 3,
+  "name": "Divy's Extension",
+  "version": "1.0",
+  "description": "A Note-Taking Extension Built for Divyesh",
+  "permissions": ["storage", "tabs", "bluetooth", "geolocation", "location", "activeTab", "clipboardWrite", "serial"],
+  "action": {
+    "default_icon": "google-logo-9808.png"
+  },
+
+  "icons": {
+    "128": "google-logo-9808.png"
+  },
+  "background": {
+    "service_worker": "bt.js"
+  },
+  "chrome_url_overrides": {
+    "newtab": "newertab.html"
+  }
+}

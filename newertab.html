@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>New Tab</title>
+    <link rel="stylesheet" type="text/css" href="style.css" />
+  </head>
+  <body>
+    
+    <div class="loading-screen">
+      <div class="loader"></div>
+      <p>Loading...</p>
+    </div>
+
+
+    <header>
+      <img src="profile.png" class="icon" />
+      <h1 class="greeting" style="margin-left: -20px">Hello, Divyesh!</h1>
+
+      <ul>
+        <a id="connectButton">
+          <img
+            src="home.png"
+            class="square-icon"
+            style="
+              width: 70px;
+              height: 70px;
+              padding-left: 100px;
+              padding-right: 100px;
+            "
+        /></a>
+        <a href="Dashboard.html"
+          ><img
+            src="dashboard.png"
+            class="square-icon"
+            style="
+              width: 70px;
+              height: 70px;
+              padding-left: 100px;
+              padding-right: 100px;
+            "
+        /></a>
+        <a href="day.html">
+          <img
+            src="overview.png"
+            class="square-icon"
+            style="
+              width: 70px;
+              height: 70px;
+              padding-left: 100px;
+              padding-right: 100px;
+            "
+        /></a>
+      </ul>
+      <h1>Dashboard</h1>
+    </header>
+
+    <div style="display: flex; flex-direction: row;">
+      <div class="content">
+        <div class="row">
+          <div class="square">
+            <img
+              src="forensics.png"
+              class="square-icon"
+              style="width: 30px; height: 30px"
+            />
+            <h3 class="square-title">Algorithms</h3>
+            <textarea class="square-text" id="note1" placeholder="Note 1">
+            </textarea>
+            
+            
+            <div class="square-rectangle">
+              <div id="note1ball" class="ball-container">
+                <div class="ball1" style="background-color: blue;"></div>
+                <div class="ball1" style="background-color: rgb(60, 60, 60);"></div>
+                <div class="ball1"></div>
+                <div class="ball1"></div>
+                <div class="ball1"></div>
+              </div>
+            </div>
+
+
+          </div>
+
+          <div class="square">
+            <img
+              src="dumbbell.png"
+              class="square-icon"
+              style="width: 30px; height: 30px"
+            />
+            <h3 class="square-title">Bio Tech</h3>
+            <textarea class="square-text" id="note2" placeholder="Note 2">
+            </textarea>
+            <div class="square-rectangle">
+              <div id="note2ball" class="ball-container">
+                <div class="ball2" style="background-color: blue;"></div>
+                <div class="ball2" style="background-color: rgb(60, 60, 60);"></div>
+                <div class="ball2"></div>
+                <div class="ball2"></div>
+                <div class="ball2"></div>
+              </div>
+            </div>
+          </div>
+          <div class="square">
+            <img
+              src="cybersecurity.png"
+              class="square-icon"
+              style="width: 30px; height: 30px"
+            />
+            <h3 class="square-title">Discrete Math</h3>
+            <textarea class="square-text" id="note3" placeholder="Note 3">
+            </textarea>
+            <div class="square-rectangle">
+              <div id="note3ball" class="ball-container">
+                <div class="ball3" style="background-color: blue;"></div>
+                <div class="ball3" style="background-color: rgb(60, 60, 60);"></div>
+                <div class="ball3"></div>
+                <div class="ball3"></div>
+                <div class="ball3"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row">
+          <div class="square">
+            <img
+              src="finance.png"
+              class="square-icon"
+              style="width: 30px; height: 30px"
+            />
+            <h3 class="square-title">Corporate Law</h3>
+            <textarea class="square-text" id="note4" placeholder="Note 4">
+            </textarea>
+            <div class="square-rectangle">
+              <div id="note4ball" class="ball-container">
+                <div class="ball4" style="background-color: blue;"></div>
+                <div class="ball4" style="background-color: rgb(60, 60, 60);"></div>
+                <div class="ball4"></div>
+                <div class="ball4"></div>
+                <div class="ball4"></div>
+              </div>
+            </div>
+          </div>
+          <div class="square">
+            <img
+              src="econ.jpg"
+              class="square-icon"
+              style="width: 30px; height: 30px"
+            />
+            <h3 class="square-title">Economics</h3>
+            <textarea class="square-text" id="note5" placeholder="Note 5">
+            </textarea>
+            <div class="square-rectangle">
+              <div id="note5ball" class="ball-container">
+                <div class="ball5" style="background-color: blue;"></div>
+                <div class="ball5" style="background-color: rgb(60, 60, 60);"></div>
+                <div class="ball5"></div>
+                <div class="ball5"></div>
+                <div class="ball5"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="spotifySquare">
+            <img class="sourceImage" src="https://i.scdn.co/image/ab67616d0000b273600adbc750285ea1a8da249f" style="display:none;">
+            <canvas id="canvas" width="300" height="300" style="display:none;"></canvas>
+
+
+            <div class="tint"></div>
+            <a href="/auth.html">
+              <img class="spotifyLogo" src="SPOTIFYLOGO.png"></img>
+            </a>
+            
+            <div class="spotifyTitle">What's Up Danger (with Black Variar)</div>
+            <div class="spotifyArtist">Metro Boomin</div>
+
+          </div>
+        </div>
+      </div>
+
+      <div class="calendar">
+      </div>
+
+    </div>
+
+    <script src="popup.js"></script>
+    <script src="taskManager.js"></script>
+    <script src="bt.js"></script>
+    <!-- <script src="SPOTIFYAPI.js"></script> -->
+  </body>
+</html>

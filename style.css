@@ -1,0 +1,407 @@
+body {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+  background-color: rgb(25, 25, 25);
+  background-image: url("bg.png");
+
+}
+
+
+
+.loading-screen {
+  background-image: url("bg.png");
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: 9999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  color: white;
+}
+.loader {
+  border: 8px solid #f3f3f3; /* Light grey */
+  border-top: 8px solid #3498db; /* Blue */
+  border-radius: 50%;
+
+  background-image: url("bg.png");
+  background-color: rgba(255, 255, 255, 0.25);
+
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+}
+@keyframes spin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
+.loading-screen.hidden {
+  display: none;
+}
+
+
+
+
+
+
+
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #333;
+  color: #fff;
+  background-color: #353a50;
+  padding: 20px;
+  border-radius: 30px;
+  margin-right: 10px;
+  margin-left: 10px;
+  margin-top: 10px;
+  margin-bottom: -5px;
+
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  color: #fff;
+}
+header h1 {
+  margin: 0;
+  font-size: 24px;
+  font-weight: normal;
+}
+.icon {
+  width: 70px;
+  height: 70px;
+  background-color: #fff;
+  border-radius: 50%;
+}
+
+
+      
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  padding: 20px;
+}
+.row {
+  display: flex;
+  flex-direction: row;
+}
+
+
+
+.spotifyTitle {
+  z-index: 2;
+  position: absolute;
+  top: 700px;
+  left: 760px;
+  color: whitesmoke;
+  font-size: x-large;
+  font-weight: 400;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+  overflow: hidden;
+  width: 300px;
+  white-space: nowrap;
+  color: linear-gradient(white, rgb(101, 101, 101));
+}
+.spotifyArtist {
+  z-index: 2;
+  position: absolute;
+  top: 740px;
+  left: 760px;
+  color:rgb(212, 212, 212);
+  font-size: small;
+  font-weight: 100;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  
+  overflow: hidden;
+  width: 300px;
+  white-space: nowrap;
+  color: linear-gradient(rgb(212, 212, 212), whitesmoke);
+}
+.spotifyLogo {
+  width: 35px;
+  height: 35px;
+  z-index: 2;
+  position: absolute;
+  top: 510px;
+  left: 760px;
+}
+.spotifySquare {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content:center;
+  border-radius: 30px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  width: 340px;
+  height: 290px;
+  overflow: hidden;
+
+  /* Set the background image */
+  background: url('SPIDER.jpg') center/cover no-repeat;
+}
+.tint {
+  position: absolute;
+  padding: 20px;
+  border-radius: 30px;
+  width: 300px;
+  height: 250px;
+  background: rgba(200, 0, 0, 0.25);
+  z-index: 1;
+}
+
+
+
+
+.square {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 20px;
+  border-radius: 10px;
+  margin-right: 20px;
+  margin-bottom: 20px;
+  width: 300px;
+  height: 250px;
+
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+  color: #fff;
+}
+.square-icon {
+  width: 50px;
+  height: 50px;
+  margin-bottom: 10px;
+}
+.square-title {
+  font-size: 24px;
+  color: white;
+  margin: 0;
+  margin-left: 10px;
+
+}
+.square-text {
+  font-size: 14px;
+  color: white;
+  margin: 0;
+  display: block;
+  margin-top: 10px;
+  width: 100%;
+  height: 100%;
+  resize: none;
+  border: none;
+  background-color: transparent;
+  color: white;
+  font-size: 20px;
+}
+
+
+textarea::placeholder {
+  color: #dedede;
+}
+textarea::-webkit-scrollbar {
+  width: 0.5em;
+}
+
+
+.square-rectangle {
+  width: 60px;
+  height: 55%;
+  background-color: white;
+  position: absolute;
+  right: 0;
+  top: 100px;
+  bottom: 0px;
+  margin-right: 15px;
+  border-radius: 10px;
+
+  
+  background: rgba(255, 255, 255, 0.15);
+  backdrop-filter: blur(10px);
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+}
+.ball1 {
+  width: 20px; /* Adjust the width of each ball as needed */
+  height: 20px; /* Adjust the height of each ball as needed */
+  margin: 5px; /* Adjust the margin between each ball as needed */
+  border-radius: 100%;
+  background-color: rgb(60, 60, 60);
+  display: inline-block;
+}
+.ball2 {
+  width: 20px; /* Adjust the width of each ball as needed */
+  height: 20px; /* Adjust the height of each ball as needed */
+  margin: 5px; /* Adjust the margin between each ball as needed */
+  border-radius: 100%;
+  background-color: rgb(60, 60, 60);
+  display: inline-block;
+}
+.ball3 {
+  width: 20px; /* Adjust the width of each ball as needed */
+  height: 20px; /* Adjust the height of each ball as needed */
+  margin: 5px; /* Adjust the margin between each ball as needed */
+  border-radius: 100%;
+  background-color: rgb(60, 60, 60);
+  display: inline-block;
+}
+.ball4 {
+  width: 20px; /* Adjust the width of each ball as needed */
+  height: 20px; /* Adjust the height of each ball as needed */
+  margin: 5px; /* Adjust the margin between each ball as needed */
+  border-radius: 100%;
+  background-color: rgb(60, 60, 60);
+  display: inline-block;
+}
+.ball5 {
+  width: 20px; /* Adjust the width of each ball as needed */
+  height: 20px; /* Adjust the height of each ball as needed */
+  margin: 5px; /* Adjust the margin between each ball as needed */
+  border-radius: 100%;
+  background-color: rgb(60, 60, 60);
+  display: inline-block;
+}
+.ball-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+}
+
+
+.calendar::-webkit-scrollbar {
+  width: 0.5em;
+}
+.calendar {
+  width: 360px;
+  height: 555px;
+  margin-top: 22px;
+  margin-right: 10px;
+  margin-left: -20px;
+  padding: 20px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 52px -18px rgba(0, 0, 0, 0.75);
+  border-radius: 12px;
+  font-family: 'Arial', sans-serif;
+  display: flex;
+  flex-direction: column;
+  overflow-y: scroll;
+}
+.time-slot {
+  font-size: 14px;
+  color: #888888;
+  margin-bottom: 5px;
+}
+.activity {
+  display: flex;
+  flex-direction: row;
+  align-items: stretch;
+  font-size: 18px;
+  color: #333333;
+  padding: 15px;
+  margin-bottom: 20px;
+  background: rgba(255, 255, 255, 0.25);
+  backdrop-filter: blur(12px);
+  
+  box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.2);
+  border-radius: 8px;
+  color: black;
+  
+  transition: transform 0.2s ease;
+}
+.activity:hover {
+  transform: scale(1.02);
+}
+.dayOfWeekName {
+  text-align: center;
+  font-size: 50px;
+  margin: 20px;
+
+  display: flex;
+  align-items: center;
+}
+.dayOfWeekName::before,
+.dayOfWeekName::after {
+  content: '';
+  flex: 1;
+  height: 2px;
+  background-color: #000; /* Adjust the color as needed */
+}
+.dayOfWeekName::before {
+  margin-right: 10px;
+}
+.dayOfWeekName::after {
+  margin-left: 10px;
+}
+.vertical-capsule {
+  width: 5px;
+  height: 20px;
+  margin-right: 10px;
+  background-color: lightblue;
+  border-radius: 1rem; /* Half of the width to make it rounded */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.vertical-capsule.color-1 {
+  background-color: #a4bdfc;
+}
+
+.vertical-capsule.color-2 {
+  background-color: #7ae7bf;
+}
+
+.vertical-capsule.color-3 {
+  background-color: #dbadff;
+}
+
+.vertical-capsule.color-4 {
+  background-color: #ff887c;
+}
+
+.vertical-capsule.color-5 {
+  background-color: #fbd75b;
+}
+
+.vertical-capsule.color-6 {
+  background-color: #ffb878;
+}
+
+.vertical-capsule.color-7 {
+  background-color: #46d6db;
+}
+
+.vertical-capsule.color-8 {
+  background-color: #e1e1e1;
+}
+
+.vertical-capsule.color-9 {
+  background-color: #5484ed;
+}
+
+.vertical-capsule.color-10 {
+  background-color: #51b749;
+}
+
+.vertical-capsule.color-11 {
+  background-color: #dc2127;
+}

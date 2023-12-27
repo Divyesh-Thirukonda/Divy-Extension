@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>New Tab</title>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        font-family: Arial, sans-serif;
+        background-color: #2b2f42;
+        background-image: url("bg.png");
+      }
+      textarea::placeholder {
+        color: #dddddd;
+      }
+      textarea::-webkit-scrollbar {
+        width: 0.5em; /* Adjust the width as per your preference */
+      }
+
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background-color: #333;
+        color: #fff;
+        background-color: #353a50;
+        padding: 20px;
+        border-radius: 30px;
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-top: 10px;
+
+        background: rgba(255, 255, 255, 0.25);
+        backdrop-filter: blur(10px);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        color: #fff;
+      }
+      header h1 {
+        margin: 0;
+        font-size: 24px;
+        font-weight: normal;
+      }
+      .icon {
+        width: 70px;
+        height: 70px;
+        background-color: #fff;
+        border-radius: 50%;
+      }
+      .box-container {
+        display: flex;
+        flex-wrap: nowrap;
+        margin-top: 20px;
+      }
+      .box {
+        width: 25%;
+        height: calc((100vh - 120px) / 1.23);
+        background-color: #eee;
+        border-radius: 20px;
+        margin: 10px;
+        padding: 20px;
+        background-color: #353a50;
+        color: bisque;
+
+        background: rgba(255, 255, 255, 0.25);
+        backdrop-filter: blur(10px);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        color: bisque;
+      }
+      .twobox {
+        display: flex;
+        flex-direction: column;
+        align-content: space-around;
+        height: calc((100vh - 120px) / 2.7);
+        background-color: #eee;
+        border-radius: 20px;
+        margin: 10px;
+        padding: 20px;
+        background-color: #353a50;
+        color: bisque;
+
+        background: rgba(255, 255, 255, 0.25);
+        backdrop-filter: blur(10px);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        color: bisque;
+      }
+      .box h2 {
+        font-size: 24px;
+        color: white;
+        margin: 0;
+      }
+      .twobox h2 {
+        font-size: 24px;
+        color: white;
+        margin: 0;
+      }
+      .textareatext {
+        display: block;
+        margin-top: 10px;
+        width: 100%;
+        height: 95%;
+        resize: none;
+        border: none;
+        background-color: transparent;
+        color: white;
+        font-size: 30px;
+      }
+      .galaxybud {
+        width: 225px;
+        height: 225px;
+        margin-left: 30px;;
+        margin-top: 10px;
+        background: rgb(223, 225, 235);
+        border-radius: 70px;
+        box-shadow: rgba(0, 0, 0, 0.17) 0px -23px 25px 0px inset, rgba(0, 0, 0, 0.15) 0px -36px 30px 0px inset, rgba(0, 0, 0, 0.1) 0px -79px 40px 0px inset, rgba(0, 0, 0, 0.06) 0px 2px 1px, rgba(0, 0, 0, 0.09) 0px 4px 2px, rgba(0, 0, 0, 0.09) 0px 8px 4px, rgba(0, 0, 0, 0.09) 0px 16px 8px, rgba(0, 0, 0, 0.09) 0px 32px 16px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      .squareBUDS {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        padding: 20px;
+        border-radius: 10px;
+        margin-right: 10px;
+        margin-bottom: 10px;
+        width: 230px;
+        height: 230px;
+        height: calc((100vh - 120px) / 2.7);
+
+        background: rgba(255, 255, 255, .1);
+        backdrop-filter: blur(10px);
+        box-shadow: 0 8px 32px 0 rgba(31, 38, 135, 0.37);
+        color: #fff;
+      }
+
+
+    </style>
+  </head>
+  <body>
+    <header>
+      <!-- <div class="icon"></div>-->
+
+      <img src="profile.png" class="icon" />
+      <h1 class="greeting" style="margin-left: -20px">Hello, Divyesh!</h1>
+
+      <ul>
+        <a href="newertab.html">
+          <img
+            src="home.png"
+            class="square-icon"
+            style="
+              width: 70px;
+              height: 70px;
+              padding-left: 100px;
+              padding-right: 100px;
+            "
+        /></a>
+        <a href="#"
+          ><img
+            src="dashboard.png"
+            class="square-icon"
+            style="
+              width: 70px;
+              height: 70px;
+              padding-left: 100px;
+              padding-right: 100px;
+            "
+        /></a>
+        <a href="day.html">
+          <img
+            src="overview.png"
+            class="square-icon"
+            style="
+              width: 70px;
+              height: 70px;
+              padding-left: 100px;
+              padding-right: 100px;
+            "
+        /></a>
+      </ul>
+      <h1>Dashboard</h1>
+    </header>
+    <div class="box-container">
+      <div class="box">
+        <h2>Achievements</h2>
+        <textarea
+          class="textareatext"
+          id="AchievementsText"
+          placeholder="What Are We Winning At?"
+        ></textarea>
+      </div>
+      <div>
+        <div class="twobox">
+          <h2 style="color: cyan">Good</h2>
+          <textarea
+            class="textareatext"
+            id="GoodText"
+            placeholder="What's Good This Week?"
+          ></textarea>
+        </div>
+        
+        
+        <!-- <div class="twobox">
+          <h2 style="color: crimson">Bad</h2>
+          <textarea
+            class="textareatext"
+            id="BadText"
+            placeholder="Stressed, Anxious, or Regretting Something?"
+          ></textarea>
+        </div> -->
+
+        <a href="https://open.spotify.com/?" style="text-decoration: none;">
+        <div class="twobox">
+          <div  class="galaxybud" style="display: flex;
+          justify-content: center;
+          align-items: center;">
+          <h3 style="color: rgb(175, 175, 175); font-size:20px;">SAMSUNG</h3>
+          </div>
+        </div>
+      </a>
+
+
+      </div>
+      <div class="box">
+        <h2>Thoughts</h2>
+        <textarea
+          class="textareatext"
+          id="ThoughtsOne"
+          placeholder="What Are We Thinking?"
+        ></textarea>
+      </div>
+      <div class="box">
+        <h2>And 1 More Thought</h2>
+        <textarea
+          class="textareatext"
+          id="ThoughtsTwo"
+          placeholder="What Are We Really Thinking?"
+        ></textarea>
+      </div>
+    </div>
+    <script src="Dashboard.js"></script>
+  </body>
+</html>
