@@ -37,7 +37,7 @@ function getDayAbbreviation(dayIndex) {
 var eventDayOfWeekAbbrv = "";
 
 var script = document.createElement('script');
-script.src = '';
+script.src = ''; // TODO: Enter your own Calendar API URL
 
 const urlCAL = script.src;
 fetch(urlCAL)
